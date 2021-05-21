@@ -20,7 +20,7 @@ A = rand(N);
 B = rand(N,M);
 
 functions.fun_f = @(X)0.5*sum( sum( (A*X - B).^2 ) );
-functions.dfun_f = @(X)A'*(A*X - B);
+functions.dfun_f = @(X)A'*(A*X - B)
 
 functions.fun_v = @(X)X;
 functions.dfun_v = 1;
